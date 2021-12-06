@@ -1,0 +1,19 @@
+html {
+  font-size: $font-size-root;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $bg-clr;
+  font: $font-size $font-family;
+}
+
+img {
+  height: auto;
+  user-select: none;
+}

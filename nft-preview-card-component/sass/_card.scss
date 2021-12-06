@@ -1,0 +1,141 @@
+.card {
+  height: auto;
+  width: $card-width;
+  border-radius: $border-radius-lg;
+  background-color: $card-bg-clr;
+  padding: $padding-2 $padding-2 $padding-reset;
+
+  &__image {
+    border-radius: $border-radius;
+    height: $card-img-height;
+
+    &:hover {
+      background: url(../images/icon-view.svg) center no-repeat $cyan;
+
+      .card__image__content {
+        opacity: 0.3;
+      }
+    }
+
+    &__content {
+      width: $size-100-percentage;
+      border-radius: $border-radius;
+    }
+  }
+
+  &__title {
+    color: $white-clr;
+    font-weight: $font-weight-normal;
+    margin: $margin-2 $margin-reset $margin-reset;
+
+    &:hover {
+      color: $cyan;
+      @include transition(all, 0.5s, ease);
+    }
+  }
+
+  &__subtitle {
+    color: $soft-blue;
+    margin: $margin-2 $margin-reset;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    height: $size-2;
+    width: $size-100-percentage;
+    margin: $margin-2 $margin-reset;
+
+    &__money {
+      display: flex;
+
+      &__title {
+        color: $cyan;
+      }
+
+      &__image {
+        margin-right: $margin-1;
+      }
+    }
+
+    &__update {
+      display: flex;
+
+      &__image {
+        margin-right: $margin-1/2;
+      }
+      &__title {
+        color: $soft-blue;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    margin: $margin-3/2 $margin-reset;
+
+    &__image {
+      object-fit: cover;
+      height: $footer-img-height;
+      width: $footer-img-width;
+      border-radius: $border-radius-round;
+      border: $border-width solid $white-clr;
+    }
+
+    &__title {
+      color: $soft-blue;
+      margin: $margin-1 auto;
+
+      span {
+        color: $white-clr;
+
+        &:hover {
+          color: $cyan;
+          @include transition(all, 0.5s, ease);
+        }
+      }
+    }
+  }
+}
+
+hr {
+  height: $size-1 * 0.1;
+  width: $size-100-percentage;
+  background-color: $line-clr;
+}
+
+.attribution {
+  text-align: center;
+  color: $soft-blue;
+  margin-top: $margin-3;
+
+  &__link {
+    color: $link-clr;
+
+    &:hover {
+      color: $cyan;
+      @include transition(all, 0.3s, ease);
+    }
+  }
+}
+
+::selection {
+  color: $white-clr;
+  background-color: $soft-blue;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+
+  body {
+    padding: $padding-1;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 7px;
+  }
+}
