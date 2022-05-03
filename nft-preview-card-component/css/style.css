@@ -53,10 +53,12 @@ img {
 .card__image {
   border-radius: 10px;
   height: 26rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card__image:hover {
-  background: url(../images/icon-view.svg) center no-repeat #00fff7;
+  background: url(../images/icon-view.svg) center no-repeat #00fff7a8;
+  cursor: pointer;
 }
 
 .card__image:hover .card__image__content {
@@ -72,10 +74,12 @@ img {
   color: #fdfafa;
   font-weight: 400;
   margin: 2rem 0rem 0rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card__title:hover {
   color: #00fff7;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -148,10 +152,12 @@ img {
 
 .card__footer__title span {
   color: #fdfafa;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card__footer__title span:hover {
   color: #00fff7;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -188,7 +194,7 @@ hr {
   background-color: #8bacda;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   html {
     font-size: 8px;
   }
@@ -197,7 +203,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   html {
     font-size: 7px;
   }

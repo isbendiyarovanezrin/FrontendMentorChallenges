@@ -8,9 +8,11 @@
   &__image {
     border-radius: $border-radius;
     height: $card-img-height;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
-      background: url(../images/icon-view.svg) center no-repeat $cyan;
+      background: url(../images/icon-view.svg) center no-repeat $hover-clr;
+      cursor: pointer;
 
       .card__image__content {
         opacity: 0.3;
@@ -27,9 +29,11 @@
     color: $white-clr;
     font-weight: $font-weight-normal;
     margin: $margin-2 $margin-reset $margin-reset;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
       color: $cyan;
+      cursor: pointer;
       @include transition(all, 0.5s, ease);
     }
   }
@@ -88,9 +92,11 @@
 
       span {
         color: $white-clr;
+        -webkit-tap-highlight-color: transparent;
 
         &:hover {
           color: $cyan;
+          cursor: pointer;
           @include transition(all, 0.5s, ease);
         }
       }
@@ -124,7 +130,7 @@ hr {
   background-color: $soft-blue;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   html {
     font-size: 8px;
   }
@@ -134,7 +140,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   html {
     font-size: 7px;
   }
